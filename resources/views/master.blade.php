@@ -44,6 +44,8 @@ Coded by www.creative-tim.com
 </head>
 
 <body class="">
+  @include('sweetalert::alert')
+    @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9%22"])
   <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
@@ -62,16 +64,16 @@ Coded by www.creative-tim.com
       </div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="active ">
-            <a href="./dashboard.html">
+          <li class="{{request()->routeIs('dashboard')?'active':''}}">
+            <a href="{{route('dashboard')}}">
               <i class="nc-icon nc-bank"></i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li>
-            <a href="./icons.html">
-              <i class="nc-icon nc-diamond"></i>
-              <p>Icons</p>
+          <li class="{{  request ()-> routeIs('artikel') ?' active':'' }} ">
+            <a href="{{ route ('artikel') }}">
+              <i class="nc-icon nc-single-copy-04"></i>
+              <p>Post Artikel</p>
             </a>
           </li>
           <li>
@@ -228,6 +230,11 @@ Coded by www.creative-tim.com
 </body>
 
 </html>
-
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script type="text/javascript">
+    tinymce.init({
+      selector: '#mytextarea'
+    });
+    </script>
 </body>
 </html>
