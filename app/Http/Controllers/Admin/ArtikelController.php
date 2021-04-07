@@ -13,6 +13,7 @@ class ArtikelController extends Controller
 {
     public function index(){
         $artikel = artikel::all();
+        
 
        return view('admin.artikel.artikel' , compact ('artikel'));
     } 

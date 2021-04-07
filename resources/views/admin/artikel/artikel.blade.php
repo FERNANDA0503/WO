@@ -4,16 +4,16 @@
 <div class="col-md-6">
     <div class="card card-user">
         <div class="card-header">
-            <h5 class="card-title">Artikel</h5>
+            <h5 class="card-title">Vendor</h5>
         </div>
         <div class="card-body">
           <table class="table">
             <tbody>
               <tr>
-                <th scope="col">3</th>
+                <th scope="col">no</th>
                 <th scope="col">gambar</th>
                 <th scope="col">judul</th>
-                <th scope="col">artikel</th>
+                <th scope="col">isi</th>
                 <th scope="col">aksi</th>
               </tr>
               <tr>
